@@ -1,6 +1,8 @@
 .carousel {
-    padding: 81px 0;
 
+    padding: 81px 0;
+    
+    
     &__inner {
         position: relative;
         width: 750px;
@@ -35,4 +37,12 @@
         }
     }
 
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin-right: 20px;
+        }
+    }
 }

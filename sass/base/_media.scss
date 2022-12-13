@@ -34,6 +34,20 @@
             font-size: 30px;
         }
     }
+
+    .carousel {
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 70%;
+        }
+    }
+
+    .catalog {
+        &__tabs {
+            max-width: 100%;
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -129,6 +143,35 @@
             font-size: 26px;
         }
     }
+
+    .carousel {
+
+        position: relative;
+
+        img {
+            width: 70%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        button {
+            display: none;
+        }
+    }
+
+    .catalog {
+        h2 {
+            font-size: 28px;
+        }
+
+        &__tab {
+            width: 28%;
+        }
+
+        &__content {
+            justify-content: space-around;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -222,6 +265,48 @@
             }
         }
     }
+
+    .carousel {
+
+        .carousel__inner {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        img {
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .prev {
+            display: none;
+        }
+
+        .next {
+            display: none;
+        }
+    }
+
+    .catalog {
+        .catalog-item {
+            width: 250px;
+
+            hr {
+                margin: 0;
+            }
+
+            &__img {
+                width: 70%;
+                height: 170px;
+            }
+
+            .button_mini {
+                width: 100px;
+                height: 40px;
+            }
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -304,6 +389,46 @@
             .button_submit {
                 cursor: default;
             }
+        }
+    }
+
+    .carousel {
+
+        padding-top: 40px;
+        padding-bottom: 20px;
+
+        .carousel__inner {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        img {
+            width: 70%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .prev {
+            display: none;
+        }
+
+        .next {
+            display: none;
+        }
+    }
+
+    .catalog {
+        .title_tabs {
+            font-size: 26px;
+        }
+
+        &__tab {
+            width: 89%;
+            margin-left: 14px
+        }
+
+        &__tabs {
+            display: block;
         }
     }
 }

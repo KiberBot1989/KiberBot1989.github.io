@@ -1,0 +1,202 @@
+.catalog {
+    padding-bottom: 100px;
+
+    &__tabs {
+        max-width: 90%;
+        margin-top: 50px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    &__tab {
+        width: 220px;
+        height: 50px;
+        background: rgba(0, 0, 0, 0.0001);
+        border: 2px solid #D0D0D0;
+        text-align: center;
+        text-transform: uppercase;
+        color: #6B6B6B;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 50px;
+        transform: skewX(-20deg);
+        transition: 0.5s all;
+        cursor: pointer;
+        border: none;
+        margin: 0 5px;
+
+        &:hover {
+            box-shadow: 3px 3px 10px $main-color;
+            /* смещение по оси X Y размытие цвет */
+        }
+
+        div {
+            transform: skewX(20deg);
+        }
+
+/*         &:nth-child(2) {
+            margin: 0 10px;
+        } */
+
+        &_active {
+            color: #fff;
+            background-color: $main-color;
+            border: none;
+        }
+    }
+
+    &__content {
+        margin-top: 57px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        display: none;
+        &_active {
+            display: flex;
+        }
+    }
+
+    &-item {
+        width: 303px;
+        min-height: 442px;
+        padding: 20px 20px 25px 20px;
+        border: 2px solid #E8E8E8;
+        overflow: hidden;
+        margin-bottom: 20px;
+
+        &__img {
+            max-width: 100%;
+            height: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        &__subtitle {
+            margin: 15px 0;
+            font-weight: 700;
+            font-size: 16px;
+            text-align: center;
+            color: #0D0D0D;
+        }
+
+        &__descr {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+        }
+
+        &__link {
+            display: block;
+            margin-top: 10px;
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            color: $main-color;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $main-color;
+            }
+        }
+
+        hr {
+            margin: 17px 0;
+            background: #E8E8E8;
+        }
+
+        &__footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__old-price {
+            font-weight: 300;
+            font-size: 14px;
+            text-decoration-line: line-through;
+            color: #555555;
+        }
+
+        &__price {
+            font-weight: 700;
+            font-size: 20px;
+            color: #050505;
+        }
+
+        &__wrapper {
+            display: flex;
+            width: calc(200% + 40px);
+        }
+
+        &__content {
+            width: 50%;
+            margin-right: 0px;
+            transform: translateX(-110%);
+            padding-right: 20px;
+            transition: 0.5s all;
+
+            &_active {
+                transform: translateX(0%);
+                margin-right: 20px;
+            }
+        }
+
+        &__list {
+            position: relative;
+            width: 50%;
+            margin-left: 20px;
+            transform: translateX(0%);
+            padding-right: 20px;
+            transition: 0.5s all;
+            padding-left: 19px;
+            margin-bottom: 0;
+            list-style-type: none;
+
+            &_active {
+                transform: translateX(-100%);
+                margin-left: 0px;
+            }
+
+            li {
+                position: relative;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 21px;
+                margin-top: 6px;
+                color: #555555;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 5px;
+                    height: 5px;
+                    background-color: $main-color;
+                    left: -14px;
+                    top: 7px;
+
+                }
+            }
+        }
+
+        &__back {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(calc(-50% - 19px));
+            color: $main-color;
+            text-decoration: underline;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 14px;
+            display: block;
+            color: $main-color;
+            &:hover {
+                color: $main-color
+            }
+        }
+    }
+}
