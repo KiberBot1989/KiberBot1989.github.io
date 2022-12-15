@@ -172,6 +172,29 @@
             justify-content: space-around;
         }
     }
+
+    section.reviews {
+        padding: 0 40px;
+        min-height: 950px;
+
+        .reviews__descr {
+            font-size: 12px;
+            line-height: 17px;
+        }
+
+        .title_reviews {
+            font-size: 26px;
+        }
+
+        .reviews__block {
+
+            align-items: center;
+            img {
+                height: 130px;
+            }
+        }
+
+    }
 }
 
 @media (max-width: 767px) {
@@ -418,6 +441,8 @@
     }
 
     .catalog {
+
+        padding-bottom: 20px;
         .title_tabs {
             font-size: 26px;
         }
@@ -429,6 +454,45 @@
 
         &__tabs {
             display: block;
+        }
+
+        .catalog-item {
+            position: relative;
+
+            hr {
+                margin: 11px;
+            }
+        }
+
+        &__back {
+            position: absolute;
+            bottom: 40px
+        }
+
+        .catalog-item__footer {
+            position: absolute;
+            bottom: 25px;
+
+        }
+    }
+
+    .reviews {
+        .container {
+            :nth-child(3) {
+                min-height: 440px;
+            }
+        }
+        .reviews__block {
+            display: block;
+            margin-top: 30px;
+            min-height: 380px;
+        }
+        .reviews__text {
+            padding-left: 0;
+            text-align: center;
+        }
+        h2.title {
+            font-size: 21px;
         }
     }
 }

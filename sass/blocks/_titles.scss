@@ -4,14 +4,24 @@
     font-size: 36px;
     text-transform: uppercase;
     color: #FFFFFF;
+
     &_left {
         text-align: left;
         margin-bottom: 0;
-        
+
     }
+
     &_tabs {
+        font-weight: 400;
+        font-size: 30px;
         color: #0D0D0D;
         margin-bottom: 0;
+    }
+
+    &_reviews {
+        font-weight: 700;
+        font-size: 30px;
+        color: #0D0D0D;
     }
 
 }
