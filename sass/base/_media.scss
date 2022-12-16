@@ -195,6 +195,23 @@
         }
 
     }
+
+    footer.footer {
+        height: 420px;
+        .footer__info {
+            width: 360px;
+            height: 200px;
+            padding: 23px 0;
+        }
+        .footer__phone {
+            font-size: 18px;
+            margin-bottom: 18px;
+        }
+
+        .footer__addr {
+            margin-bottom: 18px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -327,6 +344,31 @@
             .button_mini {
                 width: 100px;
                 height: 40px;
+            }
+        }
+    }
+
+    footer.footer {
+        height: 315px;
+        .footer__info {
+            width: 300px;
+            height: 150px;
+            padding: 10px 0;
+        }
+        .footer__phone {
+            font-size: 15px;
+            margin-bottom: 18px;
+        }
+
+        .footer__addr {
+            font-size: 15px;
+        }
+
+        .footer__social-item {
+            width: 40px;
+            height: 40px;
+            img {
+                height: 20px;
             }
         }
     }
@@ -476,7 +518,9 @@
         }
     }
 
-    .reviews {
+    section.reviews {
+
+        padding-bottom: 100px;
         .container {
             :nth-child(3) {
                 min-height: 440px;
@@ -493,6 +537,16 @@
         }
         h2.title {
             font-size: 21px;
+        }
+    }
+
+    footer.footer {
+        .footer__map {
+            position: relative;
+        }
+        .footer__info {
+            position:absolute;
+            bottom: 0;
         }
     }
 }

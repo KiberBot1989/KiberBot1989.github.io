@@ -8,6 +8,10 @@
     font-weight: 500;
     text-transform: uppercase;
     color: #ffffff;
+    transition: 1s all;
+    &:hover {
+        background-image: linear-gradient(to top, $main-color 0%, #ff0000 100%);
+    }
 
     &_main {
         margin-top: 67px;
