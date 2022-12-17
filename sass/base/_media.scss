@@ -189,6 +189,7 @@
         .reviews__block {
 
             align-items: center;
+
             img {
                 height: 130px;
             }
@@ -198,11 +199,13 @@
 
     footer.footer {
         height: 420px;
+
         .footer__info {
             width: 360px;
             height: 200px;
             padding: 23px 0;
         }
+
         .footer__phone {
             font-size: 18px;
             margin-bottom: 18px;
@@ -210,6 +213,37 @@
 
         .footer__addr {
             margin-bottom: 18px;
+        }
+    }
+
+    .overlay {
+        .modal {
+            width: 320px;
+            min-height: 320px;
+            padding: 20px 40px;
+            top: 170px;
+
+            &__subheader {
+                font-size: 14px;
+            }
+
+            &__descr {
+                font-size: 11px;
+            }
+
+            .feed-form {
+                width: 240px;
+
+                input {
+                    height: 42px;
+                    font-size: 12px;
+                }
+
+                button {
+                    height: 42px;
+                    font-size: 12px;
+                }
+            }
         }
     }
 }
@@ -350,11 +384,13 @@
 
     footer.footer {
         height: 315px;
+
         .footer__info {
             width: 300px;
             height: 150px;
             padding: 10px 0;
         }
+
         .footer__phone {
             font-size: 15px;
             margin-bottom: 18px;
@@ -367,8 +403,40 @@
         .footer__social-item {
             width: 40px;
             height: 40px;
+
             img {
                 height: 20px;
+            }
+        }
+    }
+
+    .overlay {
+        .modal {
+            width: 310px;
+            min-height: 290px;
+            padding: 20px 40px;
+            top: 170px;
+
+            &__subheader {
+                font-size: 14px;
+            }
+
+            &__descr {
+                font-size: 11px;
+            }
+
+            .feed-form {
+                input {
+                    width: 230px;
+                    height: 35px;
+                    font-size: 12px;
+                }
+
+                button {
+                    width: 230px;
+                    height: 35px;
+                    font-size: 12px;
+                }
             }
         }
     }
@@ -485,6 +553,7 @@
     .catalog {
 
         padding-bottom: 20px;
+
         .title_tabs {
             font-size: 26px;
         }
@@ -521,20 +590,24 @@
     section.reviews {
 
         padding-bottom: 100px;
+
         .container {
             :nth-child(3) {
                 min-height: 440px;
             }
         }
+
         .reviews__block {
             display: block;
             margin-top: 30px;
             min-height: 380px;
         }
+
         .reviews__text {
             padding-left: 0;
             text-align: center;
         }
+
         h2.title {
             font-size: 21px;
         }
@@ -544,9 +617,38 @@
         .footer__map {
             position: relative;
         }
+
         .footer__info {
-            position:absolute;
+            position: absolute;
             bottom: 0;
+        }
+    }
+
+    .overlay {
+        .modal {
+            width: 283px;
+            min-height: 290px;
+            padding: 22px 25px;
+            top: 170px;
+
+            &__close {
+                top: 10px;
+                right: 10px;
+            }
+
+            &__subheader {
+                font-size: 14px;
+            }
+
+            &__descr {
+                font-size: 11px;
+            }
+
+            .feed-form {
+                .button_submit {
+                    cursor: default;
+                }
+            }
         }
     }
 }
