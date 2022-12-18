@@ -43,6 +43,16 @@
         &_mini {
             min-height: 143px;
         }
+
+        .error {
+            border: 1px solid red;
+        }
+
+        label.error {
+            border: none;
+            margin-bottom: 15px;
+            text-align: center;
+        }
     }
 }
 

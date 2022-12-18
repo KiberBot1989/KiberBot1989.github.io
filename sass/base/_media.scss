@@ -221,7 +221,11 @@
             width: 320px;
             min-height: 320px;
             padding: 20px 40px;
-            top: 170px;
+            top: 250px;
+
+            label {
+                font-size: 14px;
+            }
 
             &__subheader {
                 font-size: 14px;
@@ -415,7 +419,11 @@
             width: 310px;
             min-height: 290px;
             padding: 20px 40px;
-            top: 170px;
+            top: 250px;
+
+            label {
+                font-size: 14px;
+            }
 
             &__subheader {
                 font-size: 14px;
@@ -629,7 +637,7 @@
             width: 283px;
             min-height: 290px;
             padding: 22px 25px;
-            top: 170px;
+            top: 250px;
 
             &__close {
                 top: 10px;
