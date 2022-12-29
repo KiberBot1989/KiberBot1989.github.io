@@ -1,5 +1,5 @@
 .carousel {
-
+    min-height: 900px;
     padding: 81px 0;
     
     
@@ -20,6 +20,9 @@
         img {
             width: 31px;
             height: 50px;
+            &:hover {
+                @include animation;
+            }
         }
     }
 
@@ -34,6 +37,9 @@
         img {
             width: 31px;
             height: 50px;
+            &:hover {
+                @include animation;
+            }
         }
     }
 
